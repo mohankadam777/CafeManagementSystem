@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import com.practise.cafe.model.entity.Bill;
 import com.practise.cafe.repo.BillRepo;
 import com.practise.cafe.security.JwtFilter;
 
