@@ -91,7 +91,6 @@ public class UserController {
 	
 	@GetMapping(path="/update")
 	public ResponseEntity<String>  updateUserStatus(@RequestParam Long id, @RequestParam Boolean status) {	
-		System.out.println("In controller");
 		return this.userService.updateUserStatus(id,status);
 	}
 	
@@ -99,7 +98,6 @@ public class UserController {
 	public void  deleteUser(@PathVariable Long id) {	
 		this.userService.deleteUser(id);
 	}
-
 
 	@PostMapping(path="/change-password")
 	public ResponseEntity<String>  changePassword(@RequestBody PasswordChangeRequest request ) {	
